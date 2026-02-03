@@ -1,0 +1,721 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#menuhr{
+  margin-left: 5px;
+  width: 90%;
+  height: 0.1px;
+  color: lightgray;
+  border-style: solid
+}
+
+.game-top-navb-left{
+  display: none;
+  
+}
+
+.game-top-navb-left-sticky {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  align-content: left;
+  width: auto;
+  height: 90%;
+}
+
+.game-top-navb-left-content{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-bottom: 2px;
+  align-content: left;
+  width: 100%;
+  height: 90%;
+}
+
+#game-navb-content {
+  display: none;
+}
+
+#game-title-top {
+  font-size: 16px;
+  height: 50%;
+  margin-bottom: 5px!important;
+}
+
+#game-developer-top {
+  font-size: 12px;
+  height: 100%;
+}
+
+.searchbar-open{
+  display:flex;
+}
+
+.searchbar-overlap{
+  display: none;
+}
+
+.desktop{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  
+}
+
+.up {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  
+}
+
+.left{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 0;
+  margin-left: 10px;
+  
+}
+
+.right {
+  width: auto;
+  display: flex; 
+  flex-direction: row;
+  align-items: center; 
+  justify-content: flex-end;  
+  margin-right: 10px;
+  height: 100%; 
+  box-sizing: border-box;
+}
+
+.home{
+  width: 100px;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+header {
+  position: fixed!important;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 69px!important;
+  display: flex;
+  flex-direction: row;
+  background: whitesmoke;
+  box-shadow: 1px 1px 9px grey;
+  transition: .2s;
+}
+
+body {
+ /* background: linear-gradient(245.95deg, #0328ff 0%, #06c46f 28.53%, #57d8ff 75.25%);*/
+ background: #ffffff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+	z-index: 200000;
+	transition: all .55s ease;
+	  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+	
+  
+  color: #20B2AA;
+    font-size: 30px;
+  cursor: pointer;
+  display: flex;
+}
+
+.navlist {
+  display: flex; /* Enables flexbox */
+  width: 100%; /* Full width */
+  height: 35px; /* Adjust height as needed */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Centers items horizontally */
+  background: transparent; /* Background for visualization */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  list-style: none; /* Removes bullet points */
+}
+
+.navlist li {
+  display: flex;
+  flex: 1; /* Distributes items equally */
+  margin: 0 10px; /* Adds spacing between items */
+  padding: 10px 0; /* Adds vertical padding */
+}
+
+.navlist {
+  display: flex; /* Display as a flex container */
+  justify-content: space-between; /* Distributes space between items */
+  align-items: center; /* Aligns items vertically in the center */
+  list-style: none; /* Removes default list styling */
+  padding: 0; /* Removes padding */
+  margin: 0; /* Removes margin */
+}
+
+.navlist li {
+  margin: 0 10px; /* Reduced spacing between items */
+  padding: 0; /* No padding around the list items */
+}
+
+.navlist a {
+  background: transparent; /* Background for links */
+  color: black; /* Text color */
+  font-size: 12px; /* Font size */
+  font-weight: 600; /* Font weight */
+  position: relative; /* Needed for positioning the pseudo-element */
+  padding: 10px 0; /* Adds vertical padding to create space around the text */
+  margin: 0; /* Removes margin around the anchor */
+  transition: color 0.55s ease; /* Smooth transition for text color */
+  text-decoration: none; /* Removes underline */
+  text-align: center; /* Centers text within each item */
+  display: block; /* Makes anchor tags take full space of the li */
+  width: 100%; /* Ensures anchor takes full width */
+}
+
+.navlist a::after {
+  content: ''; /* Empty content for the pseudo-element */
+  position: absolute; /* Position it relative to the parent */
+  bottom: 0; /* Align to the bottom of the parent */
+  left: 50%; /* Center it horizontally */
+  width: 100%; /* Width of the underline */
+  height: 5px; /* Height of the underline */
+  background-color: #06c46f; /* Color of the underline */
+  border-radius: 5px; /* Rounded corners */
+  transform: translateX(-50%) scaleX(0); /* Initially hidden by scaling */
+  transition: transform 0.55s ease; /* Smooth transition for hover effect */
+}
+
+.navlist a:hover::after {
+  transform: translateX(-50%) scaleX(1); /* Scale to full width on hover */
+}
+
+ 
+#menu-icon {
+  color: #1B1F3B;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+}
+
+.logos{
+  display: flex;
+  text-decoration: none;
+  color: #1B1F3B;
+  font-size: 30px;
+}
+
+.community-drop li{
+  display: block;
+}
+
+.community-drop{
+  
+  
+  width: 15%;
+  height: 110px;
+  background: whitesmoke;
+  position: absolute;
+  z-index: 600005;
+  display: none;
+  
+  margin-top: 33px;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 1px 10px 12px -3px grey, -1px 12px 10px -3px grey;
+}
+
+.community-drop li{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.community-drop:hover, .navlist li:hover .community-drop{
+  display: block;
+}
+
+.community-drop-button{
+  display: block;
+}
+
+.more-drop li{
+  display: block;
+}
+
+.more-drop{
+  width: 100%;
+  height: 110px;
+  background: whitesmoke;
+  position: relative;
+  z-index: 600005;
+  display: none;
+  
+  margin-top: 33px;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 10px;
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 1px 10px 12px -3px grey, -1px 12px 10px -3px grey;
+}
+
+.more-drop li{
+width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.more-drop:hover, .navlist li:hover .more-drop{
+  display: block;
+}
+
+.more-drop-button{
+  display: block;
+}
+
+.menu {
+  border-right-style: none;
+  border-right-color: gray;
+  border-right-width: 2px;
+  height: 100%;
+  left: 0;
+  top: 69px;
+  width: 150px;
+  z-index: 1000;
+  background-color: whitesmoke;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  box-shadow: 5px 0 5px -5px grey;
+}
+.sidebar-title {
+  background-color: transparent;
+  width: 100%;
+  
+  height: auto;
+
+  color: black;
+  display: flex;
+}
+
+#side-menu-title {
+  color: black;
+  display: flex;
+  width: 80%;
+  max-width: 115px;
+  overflow: hidden;
+  height: auto;
+ max-height: 100px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#side-menu-desc {
+  color: black;
+}
+
+#check {
+  display: none;
+}
+
+.sidebar-toggle {
+  display:none;
+  
+}
+
+.sidebar-toggle #pinned, .sidebar-toggle #unpinned{
+  cursor: pointer;
+  /*margin-top: 100px;*/
+  margin-left: 120px;
+  font-size: 17px;
+  position: fixed;
+  top: 69px;
+  border-radius: 50px;
+  transition: all .5s;
+  
+}
+
+.sidebar-toggle #pinned {
+  display: none;
+  color: #06c46f;
+  z-index: 90000;
+}
+
+.sidebar-toggle #unpinned {
+  display: block;
+  color: black;
+  z-index: 90000;
+}
+
+#check:checked ~ .sidebar-toggle #pinned{
+  display: block;
+}
+
+#check:checked ~ .sidebar-toggle #unpinned{
+  display: none;
+}
+
+#check:checked ~ section {
+  margin-left: 150px;
+  margin-right: 0px;
+  width: 80%;
+  
+}
+
+#check:checked ~ #header .desktop .up .left #menu-icon{
+display: none;
+  
+}
+.desc {
+  font-size: 10px;
+}
+
+.mobile-navlist{
+  display: none;
+}
+
+.scroller{
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.scroll-padding{
+  height: 200px;
+  width: 100%;
+}
+
+
+.sidebar-header{
+    font-size: 10px;
+  
+  color: black;
+  
+
+}
+	
+.navigate {
+  background: transparent; 
+  color: black; 
+  font-size: 15px; 
+  font-weight: 600; 
+  position: relative; 
+  padding: 10px 0; 
+  margin-left: 10px; 
+  transition: color 0.55s ease; 
+  text-decoration: none; 
+  text-align: left; 
+  display: block; 
+  width: 100%; 
+}
+
+.navigate::after {
+  content: ''; 
+  position: absolute; 
+  left: 1px;
+  top: 50%;
+  height: 90%;
+  width: 5px;
+  margin-left: -10px;
+  background-color:  #06c46f; 
+  border-radius: 5px; 
+  transform: translateY(-50%) scaleY(0); 
+  transition: transform 0.55s ease;
+}
+
+.navigate:hover::after {
+  transform: translateY(-50%) scaleY(1); /* Scale to full width on hover */
+}
+
+.tabs-navigation {
+  background: transparent; 
+  color: black; 
+  font-size: 15px; 
+  font-weight: 600; 
+  position: relative; 
+  padding: 10px 0; 
+  margin-left: 10px; 
+  transition: color 0.55s ease; 
+  text-decoration: none; 
+  text-align: left; 
+  display: block; 
+  width: 100%; 
+  
+  
+}
+
+.tabs-navigation::after {
+  content: ''; 
+  position: absolute; 
+  left: 1px;
+  top: 50%;
+  height: 90%;
+  width: 5px;
+  margin-left: -10px;
+  background-color:  #06c46f; 
+  border-radius: 5px; 
+  transform: translateY(-50%) scaleY(0); 
+  transition: transform 0.55s ease;
+}
+
+.tabs-navigation:hover::after {
+  transform: translateY(-50%) scaleY(1); /* Scale to full width on hover */
+}
+
+.tabs-navigation.active::after {
+  transform: translateY(-50%) scaleY(1);
+  content: ''; 
+  position: absolute; 
+  left: 1px;
+  top: 50%;
+  height: 90%;
+  width: 5px;
+  margin-left: -10px;
+  background-color:  #06c46f; 
+  border-radius: 5px; 
+  transition: transform 0.55s ease;
+  
+}
+
+
+	
+
+@media (max-width: 1535px){
+		header{
+			height: 35px;
+			transition: .2s;
+		}
+
+		#menu-icon{
+		display: block;
+		}
+	}
+	
+	@media (max-width: 1460px){
+	#menu-icon{
+		display: block;
+	}
+}
+
+@media (max-width: 1340px){
+
+	#menu-icon{
+		display: block;
+	}
+
+}
+@media (max-width: 1195px){
+	
+
+#menu-icon{
+		display: block;
+	}
+	
+
+	
+}
+
+@media (max-width: 700px){
+#check:checked ~ section {
+  margin-left: 150px;
+  margin-right: 0px;
+  width: 60%;
+  
+}
+.home{
+  width: 50px;
+  height: 60%;
+  overflow: hidden;
+}
+
+	header {
+  
+  transition: .2s;
+  height: 35px!important;
+}
+
+.up {
+  height: 100%;
+  
+}
+
+.menu {
+  
+
+  top: 35px;
+}
+
+.sidebar-toggle #pinned, .sidebar-toggle #unpinned{
+  top:35px;
+  /*margin-top: 50px;*/
+  margin-left: 120px;
+  
+}
+/* General mobile navlist styles */
+.mobile-navlist {
+  display: flex;
+  
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  flex-direction: column; /* Keep items in a column */
+  
+  left: 0;
+  
+  width: 100%;
+  z-index: 1001;
+  background-color: whitesmoke;
+  
+  
+  
+}
+
+.mobile-navlist li {
+  margin: 5px 0; /* Add spacing between main list items */
+  align-content: center;
+}
+
+
+#navh,
+#navb {
+  background: transparent; 
+  color: black; 
+  font-size: 15px; 
+  font-weight: 600; 
+  position: relative; 
+  padding: 10px 0; 
+  margin-left: 10px; 
+  transition: color 0.55s ease; 
+  text-decoration: none; 
+  text-align: left; 
+  
+  height: 100%; 
+}
+
+#navb {
+  display: block;
+}
+#navh::after,
+#navb::after {
+  content: '';
+  position: absolute;
+  left: 1px;
+  top: 50%;
+  height: 90%;
+  width: 5px;
+  margin-left: -10px;
+  background-color:  #06c46f;
+  border-radius: 5px;
+  transform: translateY(-50%) scaleY(0);
+  transition: transform 0.55s ease;
+}
+#navh:hover::after,
+#navb:hover::after {
+  transform: translateY(-50%) scaleY(1);
+}
+
+/* Community Dropdown styles */
+.mob-community-drop {
+  display: none; /* Hide the dropdown items initially */
+  position: relative; /* Keep position relative for consistent alignment */
+  z-index: 100000; /* Ensure they appear above other elements */
+  
+  margin-top: 5px; /* Add spacing above the dropdown items */
+  background: #f9f9f9; /* Light background for dropdown for better visibility */
+  border-radius: 4px; /* Rounded corners for dropdown items */
+}
+
+.mob-community-drop-parent {
+  position: relative; /* Make parent relative for child positioning */
+  
+}
+
+.mob-community-drop-parent:hover .mob-community-drop {
+  display: block; /* Show the dropdown items when hovering over the parent */
+}
+
+
+
+/* More Dropdown styles */
+.mob-more-drop {
+  display: none; /* Hide the dropdown items initially */
+  position: relative; /* Keep position relative for consistent alignment */
+  z-index: 100000; /* Ensure they appear above other elements */
+  margin-top: 5px; /* Add spacing above the dropdown items */
+  background: #f9f9f9; /* Light background for dropdown for better visibility */
+  border-radius: 4px; /* Rounded corners for dropdown items */
+}
+
+.mob-more-drop-parent {
+  position: relative; /* Make parent relative for child positioning */
+}
+
+.mob-more-drop-parent:hover .mob-more-drop {
+  display: block; /* Show the dropdown items when hovering over the parent */
+}
+
+.game-top-navb-left-sticky {
+  display: none;
+}
+}
+
+@media (max-width: 680px){
+
+
+#menu-icon{
+		display: block;
+		}
+		
+
+.navlist{
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		width: 300px;
+		background: #06c46f;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		padding: 2px 2px;
+		transition: all .55s ease;
+		border-bottom-left-radius: 10px;
+	}
+	
+	
+
+	.navlist a{
+		display: block;
+		margin: 5px 0;
+		margin-left: 0;
+		background: transparent;
+	}
+
+	.navlist-open{
+		right: 0;
+		
+  
+}
+}
+

@@ -1,0 +1,303 @@
+
+
+body.light-mode {
+ /* background: linear-gradient(245.95deg, #0328ff 0%, #06c46f 28.53%, #57d8ff 75.25%);*/
+ background: white;
+}
+
+
+
+body.light-mode .game {
+  background: transparent;
+}
+
+body.light-mode .game-head-section {
+  border-style: solid;
+ border-color: #06c46f;
+ 
+  
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+body.light-mode .game-top {
+ background: #06c46f;
+ border-radius: 10px;
+ border-bottom-left-radius: 0;
+ border-bottom-right-radius: 0;
+}
+
+body.light-mode .scrolled {
+  
+  background: #049c59;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: none;
+/*  box-shadow: 1px 10px 12px -3px lightgray, -1px 12px 10px -3px lightgray;*/
+}
+
+
+
+body.light-mode .onrbx { 
+  background: white; 
+  color: black;
+}
+
+body.light-mode #game-title {
+  color: black;
+}
+
+body.light-mode #game-developer {
+  color: black;
+}
+
+body.light-mode .stats-top-game #stats-icon{
+  
+  color: #0606c4;
+  
+}
+
+body.light-mode .stats-top-game #stats-icon #stats-icon-inner{
+  
+  color: #06c47f;
+}
+
+.body.light-mode .social {
+  text-decoration: none;
+}
+
+body.light-mode #discord{
+  
+  color: blue;
+}
+
+body.light-mode #yt{
+  
+  color: red;
+}
+
+body.light-mode #x {
+  
+  color: black;
+  
+}
+
+
+
+
+body.light-mode #insta {
+            
+            
+            background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AD);
+}
+body.light-mode #tiktok {
+     
+            
+            background: linear-gradient(45deg, #25F4EE, #FE2C55); 
+}
+
+
+
+
+body.light-mode .game-top-navinfo {
+  
+  
+  background: #06c46f;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+}
+
+
+
+body.light-mode .game-playbar-content {
+  
+  
+  background: white;
+  
+  
+}
+
+
+
+
+
+
+
+
+body.light-mode .instalf{
+  background: #06c46f;
+	border-radius: 10px;
+}
+
+
+
+body.light-mode .instal #instalrbxopen{
+  
+  background: red;
+  color: black;
+  border-radius: 50px;
+  
+}
+
+body.light-mode .instalf #closeinstalrbx{
+  
+  background: red;
+  color: black;
+  
+}
+
+
+body.light-mode  .game-stats{
+  
+border-right-style: solid;
+border-right-color: #06c46f;
+
+border-left-style: solid;
+border-left-color: #06c46f;
+border-bottom-style: solid;
+border-bottom-color: #06c46f;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+
+body.light-mode .game-stats h1{
+  color: black;
+}
+
+
+
+body.light-mode .game-buttons-bar{
+	 /*position: fixed;*/
+  
+  background: #06c46f;
+    border-radius: 5px;
+    box-shadow: 1px 1px 9px gray;
+}
+
+
+
+
+
+body.light-mode .game-buttons-bar .tablinks{
+  background: transparent;
+  color: black;
+  
+  border-bottom: 2px solid transparent;
+/*  transition: all .55s ease*/
+
+}
+
+body.light-mode .tablinks-gb::after {
+  background-color: #1B1F3B;
+}
+
+/*body.light-mode .game-buttons-bar button:hover {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #1B1F3B;
+}
+
+body.light-mode .game-buttons-bar button.active {
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #1B1F3B;
+}*/
+
+body.light-mode #description {
+  color: black;
+}
+
+
+@media (max-width: 700px){
+  
+
+body.light-mode .game-top-info i{
+  
+  color: black;
+}
+
+
+
+body.light-mode .game-top-nav i{
+  
+  color: black;
+}
+
+
+
+body.light-mode .game-top-sticky{
+  background: #049c59!important;
+}
+
+
+
+body.light-mode .game-top-nav-content {
+  
+  background: #06c46f;
+    
+  
+}
+
+body.light-mode .game-top {
+  border-radius: 10px;
+}
+
+
+body.light-mode #game-top-socials-drop{
+   
+  background: #06c46f;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+}
+
+body.light-mode .game-social-drop-parent a{
+  color: black;
+  text-decoration: none;
+  
+}
+
+body.light-mode #discord-mob{
+  
+  color: blue;
+}
+
+body.light-mode #yt-mob {
+  
+  color: red;
+}
+
+body.light-mode #x-mob{
+  
+  color: black;
+}
+
+
+
+  body.light-mode #insta-mob {
+            
+            
+            background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AD);
+            
+}
+
+body.light-mode #tiktok-mob {
+     
+            
+            background: linear-gradient(45deg, #25F4EE, #FE2C55); 
+            
+}
+
+
+
+body.light-mode #game-title {
+  color: #1B1F3B;
+}
+
+body.light-mode #game-developer {
+  color: #1B1F3B;
+}
+
+}

@@ -1,0 +1,427 @@
+<!DOCKTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unviere | Games</title>
+  <meta name="description" content="see here a list(s) with all our games from parcle, unviere or partners">
+    <meta name="author" content="foodeggs7 | unviere">
+    
+    
+
+  <link rel="shortcut icon" type="x-icon" href="Img/unv_games.png">
+  
+  
+  <link rel ="stylesheet" type = "text/css" href ="Style/games.css">
+      <link rel ="stylesheet" type = "text/css" href ="Style/topbarv2.css">
+      
+       <link rel ="stylesheet" type = "text/css" href ="Style/themes/UnvLight/topbar.css">
+         <link rel ="stylesheet" type = "text/css" href ="Style/themes/UnvDark/topbar.css">
+       
+         <link rel ="stylesheet" type = "text/css" href ="Style/themes/UnvLight/games.css">
+          <link rel ="stylesheet" type = "text/css" href ="Style/themes/UnvDark/games.css">
+          
+            <link rel ="stylesheet" type = "text/css" href ="Style/general.css">
+            
+                <link rel ="stylesheet" type = "text/css" href ="Style/themes/UnvDark/general.css">
+                
+                  <link rel ="stylesheet" type = "text/css" href ="Style/themes/UnvLight/general.css">
+      
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="Style/images.css">
+     <script defer type="module" src = "Scripts/topbar new.js"></script>
+</head>
+  <body>
+<input type="checkbox" id="check">
+    
+    <label class="sidebar-toggle" for="check"><i class="ri-pushpin-line"id="unpinned"></i><i class="ri-pushpin-fill" id="pinned"></i></label>
+    
+    <div id="header">
+      
+    </div>
+    
+    <input type="checkbox" id="check">
+    <label class="sidebar-toggle" for="check"><i class="ri-menu-line" id="btn"></i>
+    
+
+ 
+    <i class="ri-close-line" id="cancel"></i>
+    </label>
+    
+
+    <template id="nav">
+   
+      <h1 class="sidebar-header">On this page</h1>
+      
+                <li><a class="navigate" href="#game-jams">game jams</a></li>
+                <li><a class="navigate" href="#unviere">Unviere</a></li>
+                <li><a class="navigate" href="#parcle-games">Parcle Games</a></li>
+                <li><a class="navigate" href="#fighting">Fighting and Battle</a></li>
+                  <li><a class="navigate" href="#adventure">adventure</a></li>
+                <hr id="menuhr">
+      <h1 class="sidebar-header">Also checkout.</h1>
+        
+        <li><a class="navigate" href="https://unviere.github.io/Unviere/games">Games</a></li>
+        <li><a class="navigate" href="https://unviere.github.io/Unviere/settings">Settings</a></li>
+          <hr id="menuhr">
+      <div class="scroll-padding"></div>
+      
+      
+    </template>
+    
+
+
+  <template id="game-card"><a class="game-card" href="">
+      <div class="game-holder">
+    
+      <div class ="game-info"> 
+      <p class="game-title"></p>
+      <h6 class="owner"> By:</h6>
+       <img class="icon" src=""></img>
+      <p class="game-desc"> </p>
+      <div class ="stats-game">
+        <br>
+        <i class="ri-team-fill" id="stats-icon"><i class="ri-play-fill" id="stats-icon-inner"></i></i>
+        <h1 class="active"> </h1>
+        <br>
+        <i class="ri-map-pin-user-fill" id="stats-icon"></i>
+        <h1 class="visits"></h1>
+        <br>
+        <i class="ri-thumb-up-fill" id="stats-icon"></i>
+        <h1 class="likes"> </h1>
+      </div>
+      </div>
+      </div>
+      </a>
+       </template>
+       
+       <section class="events-sec">
+      <div class ="events"> <a name="events"></a> <h1 class="sec-header">events</h1>
+  <p class="sec-desc"> curent events will show here</p>
+  
+  <div class="events-scroller">
+    <div style="display: none" class="event-card" id="co-card">
+   
+      <div class="event-middle">
+        <div class="event-info-left">
+          <p class="event-title">Christmas obby 2023</p>
+        <img class="event-icon" src="Img/coming_soon.png"></img>
+      <p class="owner">OnlyFiftyCharactersAreAllowed GroupName (official)</p>
+      
+   
+     </div>
+     <div class="event-info-right">
+          <div class="event-top">
+          <div class="event-buttons-bar" id="event-buttons-bar-id">
+      <button class="tablinks-event" onclick="opentab(event, '#desc-ev')" id="descB">Description</button>
+      <button class="tablinks-event" onclick="opentab(event, '#info')" id="infoB">more info</button>
+  <button class="tablinks-event" onclick="opentab(event, '#reward')" id="rewardB">reward</button>
+   
+      </div>
+
+      </div>
+      
+      <div class="event-tabs-content">
+        <div class="event-tabs-c" id="desc-ev">
+          <div>
+          <p> </p>
+        </div>
+        </div>
+        
+        
+        
+          <div class="event-tabs-c" id="reward">
+          <div class="tabs-reward-top">
+            <p>decoration for parallelized engineers</p>
+          </div>
+          <div class="tabs-reward-bottom">
+            <div class="tabs-reward-left">
+              <img class="reward-img" src="../Img/universe.png" alt="placeholders event reward example will be shown here">
+              <p>type: decoration</p>
+            </div>
+            <div class="tabs-reward-right">
+              
+              <p>you get each year for amount of coins a decoration for paralleized from 3 badges you get one random</p>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="event-tabs-c" id="info">
+          <div class="tabs-info-top">
+           <p>event christmass obby as running each year this year with new UI and a double jump and roll ability.</p>
+          </div>
+          <div class="tabs-info-bottom">
+             <div class="tag orange" id="ends-soon" style="display:none;">
+              ends soon
+             </div>
+             
+            <div class="tag red" id="last" style="display:none;">
+              last
+            </div>
+             <div class="tag green-l" id="running" style="display:none;">
+               running 
+             </div>
+              <div class="tag yellow" id="soon" style="display:flex;">
+               soon
+             </div>
+            <div class="tag white-s border-black" id="reward-on" style="display:flex;">
+              reward included
+            </div>
+             <div class="tag white-s border-black" id="reward-off" style="display:none;">
+            no reward
+            </div>
+            <p id="start-date-ev">
+              from: 01-12-2024 00:00
+            </p>
+           <hr> 
+             <p id="end-date-ev">
+              to: 15-01-2025 00:00
+            </p>
+             <hr>
+            <p id="utc-ev">
+              UTC + 1
+            </p>
+            <i class="ri-reset-left-line reload-game" title="event is repeating each year" id="repeat-ev" style="display:flex;"></i>
+          </div>
+        </div>
+      </div>
+      
+     </div>
+     </div>
+     <div class="event-bottom">
+         <div class ="stats-game">
+        <br>
+        <i class="ri-team-fill" id="stats-icon"><i class="ri-play-fill" id="stats-icon-inner"></i></i>
+        <h1 class="active" id="stat"> 100k </h1>
+        <br>
+        <i class="ri-map-pin-user-fill" id="stats-icon"></i>
+        <h1 class="visits" id="stat"> 100k</h1>
+        <br>
+        <i class="ri-thumb-up-fill" id="stats-icon"></i>
+        <h1 class="likes" id="stat"> 100k</h1>
+          <br>
+          <i class="ri-calendar-event-fill" id="stats-icon"></i>
+          <h1 class="info-gj" id="date">01-12-2024/15-01-2025</h1>
+          <br>
+          <a class="more-info" href=""> event page</a>
+          
+      </div>
+      
+     </div>
+    </div>
+    
+       
+  </div>
+  
+          
+        
+  </div>
+ 
+ 
+</section>
+
+<section class="game-jams">
+      <div class ="games"> <a name="game-jams"></a> <h1 class="sec-header">Game jams</h1>
+  <p class="sec-desc"> With a game jam you make a game in like 3 - 10 days. See here our games. Made in a short time. Some game jam games try we to complete.</p>
+  <div class="game-list">
+   
+    
+ 
+  <div class="games-container">
+  <div class = "game-inf-scrolling">
+    
+    <div class="game-jams-content">
+      <a class="game-card" href="https://unviere.github.io/Unviere/forms/formj8dc5g0j25">
+      <div class="game-holder">
+    
+      <div class ="game-info"> 
+      <p class="game-title">developer challenge</p>
+      <h6 class="owner"> team: Unviere</h6>
+       <img class="icon" src="Img/coming_soon.png"></img>
+      <p class="game-desc"> applications are now open click here to apply for the developer challenge 2025 game jam.</p>
+      <div class ="stats-game">
+        <br>
+      <i class="ri-calendar-event-fill" id="stats-icon"></i>
+        <h1 class="info-gj">07-02-2025</h1>
+        <br>
+<i class="ri-calendar-schedule-fill" id="stats-icon"></i>
+        <h1 class="info-gj">10-02-2025</h1>
+        <br>
+       <i class="ri-group-fill" id="stats-icon"></i>
+        <h1 class="info-gj">3</h1>
+      </div>
+      </div>
+      </div>
+      </a>
+     
+          </div>
+       
+       <!---->
+
+         </div>
+  </div>
+   </div>
+  </div>
+ 
+  </div>
+</section>
+
+<section class="unviere-games">
+      <div class ="games"> <a name="unviere"></a> <h1 class="sec-header">Unviere</h1>
+  <p class="sec-desc"> Unviere is our main brand for now its limited to games and one plugin. In the future it will be more software and games. On and off Roblox.</p>
+  <div class="game-list">
+   
+    
+ 
+  <div class="games-container">
+  <div class = "game-inf-scrolling">
+    
+    <div class="unviere-content">
+      
+          </div>
+       
+       <!---->
+
+         </div>
+  </div>
+   </div>
+  </div>
+ 
+  </div>
+</section>
+
+<section class="parcle">
+      <div class ="games"> <a name="parcle-games"></a> <h1 class="sec-header">Parcle games</h1>
+  <p class="sec-desc"> With parcle games it official started. and with the game happy obbies. Later I met 0Shank and we started Unviere.</p>
+  <div class="game-list">
+   
+    
+ 
+  <div class="games-container">
+  <div class = "game-inf-scrolling">
+    
+    <div class="parcle-content">
+      
+          </div>
+       
+       <!---->
+
+         </div>
+  </div>
+   </div>
+  </div>
+ 
+  </div>
+</section>
+
+<section class="fighting">
+      <div class ="games"> <a name="fighting"></a> <h1 class="sec-header">Fighting and Battle</h1>
+  <p class="sec-desc"> Games where you need to play in rounds and/or battle against others.</p>
+  <div class="game-list">
+   
+    
+ 
+  <div class="games-container">
+  <div class = "game-inf-scrolling">
+    
+    <div class="fighting-content">
+      
+          </div>
+       
+       <!---->
+
+         </div>
+  </div>
+   </div>
+  </div>
+ 
+  </div>
+</section>
+
+<section class="adventure">
+      <div class ="games"> <a name="adventure"></a> <h1 class="sec-header">adventure</h1>
+  <p class="sec-desc"> enjoy the adventure in this games</p>
+  <div class="game-list">
+   
+    
+ 
+  <div class="games-container">
+  <div class = "game-inf-scrolling">
+    
+    <div class="adventure-content">
+      
+          </div>
+       
+       <!---->
+
+         </div>
+  </div>
+   </div>
+  </div>
+ 
+  </div>
+</section>
+
+
+<script defer type="module" src ="Scripts/modules/test.js"></script>
+  
+  <script defer type="module" src ="Scripts/modules/games/game_jam.js"></script>
+         
+  <script defer type="module" src ="Scripts/modules/games/unviere.js"></script>
+  
+   <script defer type="module" src ="Scripts/modules/games/parcle.js"></script>
+
+ <script defer type="module" src ="Scripts/modules/games/fighting.js"></script>
+ 
+  <script defer type="module" src ="Scripts/modules/games/adventure.js"></script>
+  
+   <script defer type="module" src ="Scripts/modules/games/events/co.js"></script>
+   
+   <script src="Scripts/modules/games/events/coTabs.js"></script>
+        
+               <script src = "Scripts/settings/theme.js"></script>
+               
+                <script src = "Scripts/topbar/nav.js"></script>
+             <script>document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+    const titleElement = document.getElementById('side-menu-title');
+    const descElement = document.getElementById('side-menu-desc');
+
+    if (titleElement) {
+        titleElement.textContent = "games";
+    } else {
+        console.error("Element with ID 'side-menu-title' not found.");
+    }
+
+    if (descElement) {
+        descElement.textContent = "explore here all our games";
+    } else {
+        console.error("Element with ID 'side-menu-desc' not found.");
+    }
+}, 1000); // Delay execution by 100 milliseconds
+});</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    var hostName = window.location.origin;
+    console.log(baseUrl)
+    
+    function GetHostPath() {
+    if (window.location.hostname === 'localhost') {
+    // Code for localhost
+    console.log("Running on localhost");
+    return 'hostName'
+} else {
+    // Code for production or other environments
+    console.log("Running on production or another domain");
+    return 'hostName/Unviere'
+}
+    }
+  });
+</script>
+  </body>
+        </html>

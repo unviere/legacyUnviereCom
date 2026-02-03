@@ -1,0 +1,167 @@
+#header {
+  position: absolute!important;
+  top: -400px!important;
+  position: sticky;
+  height: 0px!important;
+  width: 100%;
+  display: flex;
+  
+   
+}
+
+#check {
+  display: none;
+  position: sticky;
+  z-index: -2;
+}
+
+#label {display: none;
+  position: sticky;
+  z-index: -2;
+}
+
+body {
+  margin-top: 100px;
+}
+
+.link {
+    color: #0606c4;
+    text-decoration: underline;
+}
+.link:hover {
+    color: #06c46f; /* Switch to your primary green on hover */
+}
+
+.link-d {
+    color: #0606c4!important;
+    text-decoration: none;
+}
+.link-d:hover {
+    color: #06c46f!important; /* Switch to your primary green on hover */
+}
+.button-n {
+  color: black;
+  background: #06c46f;
+  border: 1px solid transparent;
+  border-radius: 7px;
+}
+.button-n:hover {
+  background: #c3c3c3;
+  color: black;
+  border: 1px solid transparent;
+  transform: translateX(8px);
+}
+
+.ctaa {
+  background: #20B2AA;
+  border: 1px solid transparent;
+  color: #1B1F3B;
+  border-radius: 7px;
+}
+
+.ctaa:hover {
+  background: #c3c3c3;
+  border: 1px solid transparent;
+  color: #1B1F3B;
+  transform: translateX(8px);
+}
+
+#error-sec {
+  display: flex;
+  height: 100%;
+  background: transparent;
+}
+
+.error-main {
+  background: whitesmoke;
+  box-shadow: 1px 1px 9px gray;
+  
+  position: relative;
+  display: flex;
+  flex-direction: column!important;
+  left: 10%!important;
+  width: 80%!important;
+  height: auto!important;
+  min-height: 2px!important;
+}
+
+.error-title {
+  color: red;
+  
+  position: relative;
+  display: flex;
+  width: 100%!important;
+  text-align: center!important;
+  align-items: center!important;
+  align-content: center!important;
+  justify-content: center;
+  
+}
+
+.error-desc {
+  
+  color: black;
+  
+  white-space: pre-wrap;
+  word-wrap: break-word; /* This ensures long words break */
+  word-break: break-word; /* Fallback to ensure long words break */
+  overflow-wrap: break-word; /* Fallback for older browsers */
+  
+  position: relative;
+  display: flex;
+  width: 90%!important;
+  min-width: 90%;
+  left: 5%!important;
+  height: auto!important;
+  min-height: 5px;
+}
+
+#disabled {
+  display: none!important;
+}
+
+.tag {
+  border-radius: 2px;
+  font-size: 5px!important;
+  text-align: center!important;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-black{
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 2px!important;
+}
+
+.green-l {
+  background: greenyellow;
+  color: black;
+}
+
+.orange {
+  background: orange;
+  color: black;
+}
+
+.red {
+  background: red!important;
+  color: whitesmoke!important;
+}
+
+.yellow {
+  background: yellow;
+  color: black;
+}
+
+.white-s {
+  background: whitesmoke;
+  color: black;
+}
+@media (max-width: 700px){
+  body {
+  margin-top: 50px;
+}
+}
