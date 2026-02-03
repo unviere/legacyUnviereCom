@@ -50,7 +50,7 @@ const universeId= "6519358648"
   //  const infoUrl = `https://raw.githubusercontent.com/unviere/Unviereapis/refs/heads/main/Events/eventInfo${game.id}.json`;
 
   //  console.log(infoUrl)
-    const imgUrl = `https://unviere.github.io/Unviere/games/api/thumbs/thumbnail${universeId}.png`;
+    const imgUrl = `https://legacy.unviere.com/games/api/thumbs/thumbnail${universeId}.png`;
 
     // 4. Check if the game has a genre that matches our target genres
     //const hasMatchingGenre = game.genres.some(genre => targetGenres.includes(genre)); // Check for genre match

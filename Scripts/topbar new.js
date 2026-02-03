@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Fetch the content for the header
-  fetch('https://unviere.github.io/Unviere/pages/topbar.html')
+  fetch('https://legacy.unviere.com/pages/topbar.html')
     .then(response => response.text())
     .then(data => {
       // Insert the fetched content into the header

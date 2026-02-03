@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gameClone.querySelector('.likes').textContent = `${formatNumber(gameData.likes || 0)}`;
         gameClone.querySelector('.visits').textContent = ` ${formatNumber(gameData.visits || 0)}`;
         gameClone.querySelector('.more-info').href = `${GetHostPath('games/game')}?id=${game.id}/${game.name}`;
-        gameClone.querySelector('.event-icon').src = `https://unviere.github.io/Unviere/games/api/thumbs/thumbnail${game.universeId}.png`;
+        gameClone.querySelector('.event-icon').src = `https://legacy.unviere.com/games/api/thumbs/thumbnail${game.universeId}.png`;
 
         // Event Status Handling
         const currentDate = new Date();

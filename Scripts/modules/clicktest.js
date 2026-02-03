@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           // Construct the custom URL for the game page
 const idtag = "id"
-const customPageUrl = `https://unviere.github.io/Unviere/games/game?${idtag}=${game.id}/${game.name}`;
+const customPageUrl = `https://legacy.unviere.com/games/game?${idtag}=${game.id}/${game.name}`;
 gameClone.querySelector(".game-card").href = customPageUrl;
 
           // Fetch game icon (image) dynamically for each game
@@ -80,7 +80,7 @@ gameClone.querySelector(".game-card").href = customPageUrl;
           .catch(error => {
             console.error('Error fetching the thumbnail:', error);
             // Use a fallback image if the fetch fails
-            gameClone.querySelector('.icon').src = 'https://unviere.github.io/Unviere/Img/unv_games.png';
+            gameClone.querySelector('.icon').src = 'https://legacy.unviere.com/Img/unv_games.png';
             gameContainer.appendChild(gameClone); // Append the clone even if image fails
           });
         });

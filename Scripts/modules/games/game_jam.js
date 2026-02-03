@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const fetchAndDisplayGame = (game) => {
     const apiUrl = `https://games.roproxy.com/v1/games?universeIds=${game.universeId}`;
-    const imgUrl = `https://unviere.github.io/Unviere/games/api/thumbs/thumbnail${game.universeId}.png`;
+    const imgUrl = `https://legacy.unviere.com/games/api/thumbs/thumbnail${game.universeId}.png`;
 
     // 4. Check if the game has a genre that matches our target genres
     const hasMatchingGenre = game.genres.some(genre => targetGenres.includes(genre)); // Check for genre match
