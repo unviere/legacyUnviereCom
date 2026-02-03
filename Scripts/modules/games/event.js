@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function GetHostPath(path) {
     return window.location.hostname === 'localhost'
       ? `${hostName}/${path}.html`
-      : `${hostName}/Unviere/${path}`;
+      : `${hostName}/${path}`;
   }
 
   // Fetch game data

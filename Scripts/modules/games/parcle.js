@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 } else {
     // Code for production or other environments
     //console.log("Running on production or another domain");
-    return hostName +'/Unviere/' + path
+    return hostName +'/' + path
 }
     }
   const gameTemplate = document.getElementById('game-card').content;
